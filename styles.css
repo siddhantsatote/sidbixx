@@ -9,6 +9,7 @@
     background-image:url(image/black.png);
     background-size:cover;
     border:none;
+    position:relative;
 } 
 
 .navbar{
@@ -188,7 +189,7 @@
     width: 500px;
     text-align: left;
     margin-left: 150px;
-    margin-top: 120px;
+    margin-top: 10px;
     margin-bottom: 400px;
 }
 
@@ -203,11 +204,12 @@
 }
 
 .video {
-    margin-top:230px;
+    margin-top: 200px;
     width: 100%;
     height: 100vh;
     position: relative;
     display: flex;
+  
 }
 
 .back-video{
@@ -313,24 +315,136 @@
 .banner {
     width: 100%;
     height: 100vh;
-   // background-image: linear-gradient(white) url(image/background.png);
+    background-image:  url(image/black.png);
     background-size: cover;
     background-position: center;
+    padding-top:100px;
 }
 
 .call{
-    margin-top:100px;
+    margin-top:10px;
     border:solid;
     margin-top:100px;
    // margin-bottom:100px;
    margin-left:500px;
    margin-right:500px;
    border-radius:30px;
-
+   background-color:white;
+   
 }
 
-.last{
-    text-align:center;
-    font-family:Arial;
-    margin-top:10px;
+.last {
+    text-align: center;
+    font-family: Arial;
+    background-image: url(image/black.png);
+    color: white;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/black.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
 }
+
+.drop{
+    font-size:40px;
+    cursor:pointer;
+}
+
+.drop:hover{
+    color:mediumpurple;
+}
+
+body {
+    font-family: Arial;
+    margin:0;
+    padding:0;
+}
+
+.cord {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-image: url(image/tshirt1.png);
+    background-size: cover;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 365px;
+    height: 365px;
+    border: solid;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.cord1 {
+    background-image: url(image/tshirt1.png);
+}
+
+.cord2 {
+    background-image: url(image/tshirt2.png);
+}
+
+.cord3 {
+    background-image: url(image/tshirt3.png);
+}
+
+
+    .cord::before,
+    .cord::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: calc(60% + 35px);
+        background-color: #fff;
+        transition: transform 0.5s .25s
+    }
+
+    .cord::before {
+        top: 0;
+        clip-path: polygon(0 0,100% 0,100% 45%,0% 100%);
+        transform: translateY(-100%);
+    }
+
+    .cord::after {
+        bottom: 0;
+        clip-path: polygon(0 55%,100% 0,100% 100%,0% 100%);
+        transform: translateY(100%);
+    }
+
+.cord__body {
+    color:black;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.cord__title {
+    opacity: 0;
+    color: #6a515e;
+    margin-bottom: 15px;
+    transition: opacity 0.25s;
+}
+
+.cord:hover::before,
+.cord:hover::after {
+    transform: translateY(0);
+}
+
+.cord:hover .card__body {
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+
+.cord:hover .card__title {
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+
+
