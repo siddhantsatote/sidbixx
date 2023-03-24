@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
     <meta charset="utf-8" />
     <title>sidbixx</title>
     <link rel="stylesheet"  href="styles.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
     
-    <div class="container5">
+    <div class="container5" id="demo2">
        <div class="navbar">
             <header class="logo">sidbixx</header>
            <nav class="nav">
                <ul class="ul">
-                   <li class="li"><a href="https://siddhantsatote.github.io/sidbixx/" class="a">Home</a></li>
-                   <li class="li"><a href="" class="a">About</a></li>
-                   <li class="li"><a href="" class="a">Contact</a></li>
+                   <li class="li"><a href="#demo2" class="a">Home</a></li>
+                   <li class="li"><a href="#demo3" class="a">Collection</a></li>
+                   <li class="li"><a href="#demo" class="a">About</a></li>
+
                </ul>
            </nav>
        </div>
@@ -28,7 +31,7 @@
                     only a few clicks away.
                     </p>
 
-                <button type="button" class="button" onclick="document.location='https://linktr.ee/sid.bixx'">Explore</button>
+                <button type="button" class="button" onclick="document.location='#demo4'" >Explore</button>
 
             </div>
             <div class="col">
@@ -53,7 +56,7 @@
         </div>
     </div>
 
-    <div class="banner">
+    <div class="banner" id="demo4">
         <div class="call">
             <p class="title">sidbixx</p>
             <p class="gmail">Inquires:sidbixx@gmail.com</p>
@@ -72,14 +75,14 @@
         </div>
     </div>
 
-    <div class="video">
+    <div class="video" id="demo">
 
         <video autoplay loop muted plays-inline class="back-video">
             <source src="image/aboutus.mp4" type="video/mp4">
         </video>
 
       <div class="container4">
-        <p class="about">
+        <p class="about" >
             About us
         </p>
         <p class="aboutinfo">
@@ -97,27 +100,69 @@
    
     <div class="last">
        
-        <h1 class="drop">New drop on store</h1>
+        <h1 class="drop">New drops on store</h1>
         <div class="cord cord1">
-            <p class="card__title">sidbixx</p>
-            <p class="card__body">graphic t shirt by sidbixx</p>
+            <p class="cord__title">sidbixx</p>
+            <p class="cord__body">graphic t shirt by sidbixx</p>
 
         </div>
 
         <div class="cord cord2">
-            <p class="card__title">sidbixx</p>
-            <p class="card__body">graphic t shirt by sidbixx</p>
+            <p class="cord__title">sidbixx</p>
+            <p class="cord__body">graphic t shirt by sidbixx</p>
 
         </div>
 
         <div class="cord cord3">
-            <p class="card__title">sidbixx</p>
-            <p class="card__body">graphic t shirt by sidbixx</p>
+            <p class="cord__title">sidbixx</p>
+            <p class="cord__body">graphic t shirt by sidbixx</p>
 
         </div>
 
 
     </div>
+
+    <div class="slider" id="demo3">
+        <div class="choi">
+            OUR COLLECTION
+         </div>
+        <div class="swiper">
+            
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide"><img src="image/type1.png" alt=""></div>
+              <div class="swiper-slide"><img src="image/type2.png" alt=""></div>
+              <div class="swiper-slide"><img src="image/type3.png" alt=""></div>
+              <div class="swiper-slide"><img src="image/type4.png" alt=""></div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+     
+</div>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction:false,
+                },
+           
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable:true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
