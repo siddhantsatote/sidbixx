@@ -113,6 +113,13 @@ body {
 .button:hover{
     background-color:white;
     color:black;
+
+    background-color: white;
+    box-shadow: 0 0 10px white,
+    0 0 40px white,
+    0 0 80px white,
+    0 0 160px white,
+    0 0 240px white;
 }
 
 .button:active{
@@ -121,7 +128,7 @@ body {
 
 .col{
     margin-right:100px;
-    margin-left:50px;
+    margin-left:150px;
 }
 
 .card{
@@ -137,6 +144,7 @@ body {
     border-radius:10px;
     font-family:Arial;
     transition : transform 0.5s;
+   
 }
 
 .card1 {
@@ -157,7 +165,6 @@ body {
 
 .card:hover{
     transform: translateY(-10px);
-
 }
 
 .h5{
@@ -195,8 +202,6 @@ body {
     text-align: center;
     font-family: Arial;
 }
-
-
 
 
 .container4 {
@@ -242,6 +247,7 @@ body {
     cursor: pointer;
     border-radius: 15px;
     margin-top: 30px;
+
 }
 
 .contact:hover {
@@ -270,9 +276,7 @@ body {
 }
 
     #button-store:hover{
-       
-       background-color: transparent;
-       color: black;
+       opacity: 0.9;
     }
 
     #button-store:active {
@@ -296,8 +300,8 @@ body {
 }
 
     #button-youtube:hover {
-        background-color: transparent;
-        color: black;
+        opacity: 0.9;
+       
     }
 
     #button-youtube:active {
@@ -319,8 +323,7 @@ body {
 }
 
     #button-insta:hover {
-        background-color: transparent;
-        color: black;
+        opacity: 0.9;
     }
 
     #button-insta:active {
@@ -330,16 +333,17 @@ body {
 .banner {
     width: 100%;
     height: 100vh;
-    background-image:  url(image/black.png);
+    background:black;
     background-size: cover;
     background-position: center;
     padding-top:100px;
 }
 
 .call{
-    margin-top:10px;
-    border:solid;
-    margin-top:100px;
+   border:solid;
+   border-color:white;
+   margin-top:10px;
+   margin-top:100px;
    margin-bottom:100px;
    margin-left:500px;
    margin-right:500px;
@@ -348,15 +352,16 @@ body {
    
 }
 
+
 .last {
     text-align: center;
     font-family: Arial;
-    background-image: url(image/black.png);
+    background:black;
     color: white;
     margin: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(image/black.png);
+   
     background-size: cover;
     background-position: center;
     padding-top: 100px;
@@ -392,15 +397,15 @@ body {
 }
 
 .cord1 {
-    background-image: url(image/tshirt1.png);
+    background-image: url(image/tshirt5.png);
 }
 
 .cord2 {
-    background-image: url(image/tshirt2.png);
+    background-image: url(image/tshirt6.png);
 }
 
 .cord3 {
-    background-image: url(image/tshirt3.png);
+    background-image: url(image/tshirt7.png);
 }
 
 
@@ -487,4 +492,10 @@ body {
 
 .swiper .swiper-pagination-bullet-active{
     background:black;
+}
+
+.key{
+    width:100%;
+    height:100vh;
+    background: black;
 }
